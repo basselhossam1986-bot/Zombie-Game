@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Survival 2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <canvas id="gameCanvas"></canvas>
+
+    <header class="hud">
+      <div class="stat">❤️ <span id="health">100</span></div>
+      <div class="stat">🔫 <span id="ammo">30 / 120</span></div>
+      <div class="stat">⭐ <span id="score">0</span></div>
+      <div class="stat">🌊 Wave <span id="wave">1</span></div>
+      <button id="pauseBtn">Ⅱ</button>
+      <button id="soundBtn">🔊</button>
+    </header>
+
+    <div id="message" class="message"></div>
+
+    <section id="menu" class="screen">
+      <h1>ZOMBIE SURVIVAL</h1>
+      <p>Survive the endless zombie waves.</p>
+      <button id="startBtn">START GAME</button>
+      <div class="instructions">
+        WASD / Arrows: Move<br>
+        Mouse: Aim<br>
+        Left Click: Shoot<br>
+        R: Reload<br>
+        ESC: Pause
+      </div>
+    </section>
+
+    <section id="pauseScreen" class="screen hidden">
+      <h1>PAUSED</h1>
+      <button id="resumeBtn">RESUME</button>
+      <button id="menuBtn">MAIN MENU</button>
+    </section>
+
+    <section id="gameOver" class="screen hidden">
+      <h1>GAME OVER</h1>
+      <p>Final Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">PLAY AGAIN</button>
+      <button id="homeBtn">MAIN MENU</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
