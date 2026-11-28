@@ -142,3 +142,12 @@ button:hover {
     padding: 8px 12px;
   }
 }
+.basselhossam{
+  position: absolute;
+  color: #f06056;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 22px;
+  text-shadow: 0 0 10px #000;
+  margin-left: 12px;
+  
+}
